@@ -1,0 +1,11 @@
+.DS_Store
+.vs/
+PD2023/.DS_Store
+PD2023/PD2023.csproj
+PD2023/Properties/launchSettings.json
+PD2023/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+PD2023/obj/Debug/net7.0/PD2023.AssemblyInfo.cs
+PD2023/obj/Debug/net7.0/PD2023.AssemblyInfoInputs.cache
+PD2023/obj/Debug/net7.0/PD2023.GeneratedMSBuildEditorConfig.editorconfig
+PD2023/obj/Debug/net7.0/PD2023.GlobalUsings.g.cs
+PD2023/obj/Debug/net7.0/PD2023.csproj.AssemblyReference.cache

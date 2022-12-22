@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>PRDC 2023 Program</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/2022_logo.png" alt="prdc logo" width="200px" align="middle"></a></h1>
+		<p class="summary">
+			27th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC 2023)
+			<br>
+			November 28-December 1, 2023, Singapore, Singapore + (Virtual options)
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+		<ul class="gnav">
+			<!--
+			<li><a href="index.html">Top</a></li>
+		-->
+			<li class="subnav"><a href="cfp.html">Calls</a>
+
+	        <ul>
+		        <li><a href="cfp.html">Call for Papers</a></li>
+		        <li><a href="cfp-industry.html">Call for Industry Track Papers</a></li>
+		        <li><a href="cfp-fa.html">Call for Fast Abstracts</a></li>
+	        </ul>
+    	    </li>
+			<li class="subnav"><a href="program.html">Program</a>
+	        <ul>
+		        <li><a href="program.html?id=glance">Program at a glance</a></li>
+		        <li><a href="program.html?id=program">Full Program</a></li>
+		        <li><a href="keynote.html">Keynote Speeches</a></li>
+	        </ul>
+	        </li>
+			<li class="subnav"><a href="organizing.html">Committees</a>
+				<ul>
+					<li><a href="organizing.html?id=organizing">Organizing Committee</a></li>
+					<li><a href="organizing.html?id=steering">Steering Committee</a></li>
+					<li><a href="organizing.html?id=tpc">Program Committee</a></li>
+					<li><a href="organizing.html?id=industrypc">Industry Program Committee</a></li>
+					<li><a href="organizing.html?id=fapc">Fast Abstract Committee</a></li>
+				</ul>
+			</li>
+
+			<li class="subnav"><a href="attending.html">Attending</a>
+	        <ul>
+		    <li><a href="attending.html?id=general">General Information</a></li>
+		    <li><a href="attending.html?id=registration">Registration</a></li>
+		    <li><a href="attending.html?id=venue">Venue</a></li>
+	        </ul>
+	        </li>
+
+			<li class="subnav"><a href="index.html">More</a>
+				<ul>
+					<li><a href="http://prdc.dependability.org/">Past events</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+	<div id="topicpath"><a href="index.html">Top</a> &gt; Keynote</div>
+    <h2 id="keynote">Keynote Speeches</h2>
+    <p style="text-align: center;" id="Kishor"><img alt="Kishor S. Trivedi" src="images/2022_Kishor S. Trivedi.jpg" style="height: 230px;" /></p>
+    <h3 style="color:black;background-color:#F1F1F1;"><center><strong>Kishor S. Trivedi (Duke University)</strong></center></h3>
+    
+    <center><strong><font size="+2">Rethinking Software Fault Tolerance</font></strong></center>
+    
+    <p>
+		<strong>Abstract</strong>
+		Complex systems in different domains contain significant amount of software. Several studies have established that a large fraction of system outages are due to software faults. Traditional methods of fault avoidance, fault removal based on extensive testing/debugging, and fault tolerance based on design/data diversity are found inadequate to ensure high software dependability. The key challenge then is how to provide highly dependable software. We discuss a viewpoint of fault tolerance of software-based systems to ensure high dependability. We classify software faults into Bohrbugs and Mandelbugs, and identify aging-related bugs as a subtype of the latter. Traditional methods have been designed to deal with Bohrbugs. The key challenge then is to develop mitigation methods for Mandelbugs in general and aging-related bugs in particular. We submit that mitigation methods for Mandelbugs utilize environmental diversity. Retry operation, restart application, failover to an identical replica (hot, warm or cold) and reboot the OS are reactive recovery techniques applied after the occurrence of a failure. They are examples of techniques that rely on environmental diversity. For software aging related bugs, it is also possible to utilize a proactive environmental diversity technique known as software rejuvenation. We discuss environmental diversity both from experimental and analytic points of view and cite examples of real systems employing these techniques.
+	</p>
+    
+		<p>
+		<strong>Bio</strong>
+	Kishor S. Trivedi is the Hudson Chair Professor in the Department of Electrical and Computer Engineering at Duke University. He is IEEE Fellow, IEEE Life Fellow, and Golden Core Member of the IEEE Computer Society. He is the author of the well-known textbook entitled, <i>Probability and Statistics with Reliability, Queuing and Computer Science Applications</i>. His software tools SHARPE (Symbolic Hierarchical Automated Reliability and Performance Evaluator), SPNP (Stochastic Petri Net Package), and SREPT (Software Reliability Estimation and Prediction Tool) have been used in 500+ academic/industrial laboratories. He is a recipient of IEEE Computer Society Technical Achievement Award for his research on Software Aging and Rejuvenation. He is a recipient of IEEE Reliability Society’s Lifetime Achievement Award.
+	</p>
+	
+	<hr style="border:none;border-top:5px solid;">
+	<br>
+	<p style="text-align: center;" id="paulo"><img alt="Paulo E. Verissimo" src="images/2022_Paulo E. Verissimo.jpg" style="height: 230px;" /></p>
+	
+	<h3 style="color:black;background-color:#F1F1F1;"><center><strong>Paulo E. Verissimo (KAUST)</strong></center></h3>
+	
+	<center><strong><font size="+2">Cyber Resilience explained through a Blockchain example</font></strong></center>
+	
+	<p>
+		<strong>Abstract</strong>
+		Resilient computing is attracting attention as an emerging paradigm, driven by the shortcomings of cybersecurity techniques in face of the current challenges to IT systems. These classic paradigms are largely based on prevention and reaction, assuming static or pre-defined architecture configurations, number of participants, system and threat/fault assumptions, or unconditional trust in stakeholders/third parties. I will briefly introduce this status quo, motivating the need for cyber resilience further to cyber security. 
+To make matters concrete about the mindset behind resilient computing, the bulk of the talk will discuss the challenges faced when you go about conceiving a distributed fault/intrusion tolerant and resilient system … that ends-up implementing a Blockchain. More exactly, a high-speed permissionless blockchain system secure against attackers with way more than 51% network computing power, and resilient to all attacks known at date of publication (RepuCoin, for those interested to have a sneak-peek).
+
+	</p>
+	
+	<p>
+		<strong>Bio</strong>
+	    Paulo E. Verissimo is a Professor at KAUST University (SA) and Director of its Resilient Computing and Cybersecurity Center (RC3 - <a href="https://rc3.kaust.edu.sa">https://rc3.kaust.edu.sa/</a>). Previously, he was a professor and FNR PEARL Chair at the University of Luxembourg FSTM, and Head of the CritiX Research Lab at SnT center at the same University. He is both IEEE Fellow and ACM Fellow. He was the representative of UNILU-SnT in European Cyber Security Organization, Chair of the IFIP WG 10.4 on Dependable Computing and Fault-Tolerance, vice-Chair of the Steering Committee of DSN, and associate editor of IEEE TC and IEEE TETC.
+	</p>
+	
+	<hr style="border:none;border-top:5px solid;">
+	<br>
+	<p style="text-align: center;" id="zhendong"><img alt="Zhendong Su" src="images/2022_Zhendong Su.jpg" style="width: 190px; height: 230px;" /></p>
+	<h3 style="color:black;background-color:#F1F1F1;"><center><strong>Zhendong Su (ETH Zurich)</strong></center></h3>
+		<center><strong><font size="+2">Reimagining the Engineering of Software</font></strong></center>
+	
+	<p>
+		<strong>Abstract</strong>
+		The key mission of computer science is to help people construct
+reliable, performant, and usable software. To this end, there have
+been substantial conceptual, technological, and practical advances for
+engineering high-quality software---we have better processes,
+languages, compilers, and development tools. On the other hand, the
+fundamental processes and toolchains are not significantly different
+from those in the early days of the field. In this talk, I will share
+some reflections on how we may advance the science and practice of
+engineering software. The talk highlights several areas and directions
+that I believe are critical and offer promising opportunities for
+significantly moving our field forward.
+
+	</p>
+	
+	<p>
+		<strong>Bio</strong>
+    	    Zhendong Su is a Professor in the Department of Computer Science at ETH Zurich. He had been a full professor in Computer Science and a Chancellor's Fellow at UC Davis until June 2019. He is an elected member of the Academia Europaea (the Academy of Europe). He served on the steering committees of ISSTA and ESEC/FSE, served as an Associate Editor for ACM TOSEM, co-chaired SAS 2009, program chaired ISSTA 2012, and program co-chaired SIGSOFT FSE 2016. His research spans programming languages and compilers, software engineering, computer security, deep learning and education technologies.
+	</p>
+	
+	<hr style="border:none;border-top:5px solid;">
+	<br>
+	<p style="text-align: center;" id="tao"><img alt="Tao Xie" src="images/2022_Tao Xie.jpg" style="width: 190px; height: 230px;" /></p>
+	<h3 style="color:black;background-color:#F1F1F1;"><center><strong>Tao Xie (Peking University)</strong></center></h3>
+
+	<center><strong><font size="+2">AI for Software Dependability: How Far Can We Go?</font></strong></center>
+	<p>
+		<strong>Abstract</strong>
+		As an example of exploiting the synergy between AI and software engineering, the field of intelligent software engineering (denoting intelligent [software engineering] or AI for software engineering) has emerged with various advances in recent years. This field focuses on instilling intelligence in approaches developed to address various software engineering tasks to accomplish high effectiveness and efficiency, including but not limited to accomplishing the goal of high software dependability. This talk will discuss recent research and future directions in the field of intelligent software engineering for accomplishing the goal of high software dependability, while attempting to explore “how far can we go” with intelligent solutions.
+
+	</p>
+	
+	<p>
+		<strong>Bio</strong>
+		Tao Xie is a Peking University Chair Professor, a Deputy Director of the Key Lab of High Confidence Software Technologies (PKU), Ministry of Education, and the Deputy Secretary General of the Emerging Engineering Development Committee of Peking University. He was a Full Professor at the Department of Computer Science, University of Illinois at Urbana-Champaign (UIUC), USA. He is a Foreign Member of Academia Europaea, a Fellow of ACM, IEEE, AAAS, and CCF. He also serves as a Deputy Director of CCF TCSE. His main research interests include software engineering, system software, software security, and trustworthy AI.
+	</p>
+	
+	
+	
+	<!-- <h2 id="keynote">Plenary Talk</h2>
+	<p style="text-align: center;"><img alt="xingliang_yuan_photo" src="/PRDC2021/images/yuan.jpg" style="width: 190px; height: 230px;" /></p>
+
+	<h3>Xingliang Yuan (Monash University, Australia)</h3>
+	<p>
+		<strong>Title</strong>
+		Secure Network Measurement as a Cloud Service
+	</p>
+	<p>
+		<strong>Abstract</strong>
+		Network function virtualisation enables versatile network functions as cloud services. Specifically, network measurement tasks such as heavy-hitter detection and flow distribution estimation serve many core network functions for improved performance and security of enterprise networks. However, deploying network measurement services in third-party cloud providers raises privacy and security concerns. In this talk, I will present the design of our recent work named OblivSketch - a secure network measurement service built from Intel SGX. We harness the insights from confidential computing, large-scale network flow analysis, and data-oblivious primitives to build a secure and practical network measurement service. We integrate OblivSketch into the framework of SDN and demonstrate its performance via CAIDA datasets with millions of flows.
+	</p>
+	
+	<p>
+		<strong>Bio</strong>
+	    Dr Xingliang Yuan is a Senior Lecturer at the Department of Software Systems and Cybersecurity in the Faculty of Information Technology, Monash University, Australia. He obtained his PhD degree from City University of Hong Kong in 2016. His research interests include data security and privacy, secure networked system, confidential computing, machine learning security and privacy. His research has been supported by Australian Research Council, CSIRO Data61, and Oceania Cyber Security Centre. In the past few years, his work has appeared in prestigious venues in computer security and networks, such as ACM CCS, NDSS, IEEE INFOCOM. He received the best paper award in the European Symposium on Research in Computer Security (ESORICS) 2021. He was the recipient of the Dean’s Award for Excellence in Research by an Early Career Researcher at Monash Faculty of IT in 2020. 
+	</p> -->
+	
+    
+    
+	<!-- <h2 id="accepted">Accepted Papers</h2>
+	<p>
+        We would like to congratulate authors of the accepted papers. Please see them below.
+    </p>
+	<h3>Full Papers (total 16)</h3>
+    	<table>
+    	<tr>
+    	    <td>Author(s)</td>
+    	    <td>Title</td>
+    	</tr>
+    	<tr>
+    	    <td>Mehdi Karimibiuki, Andre Ivanov and Karthik Pattabiraman</td>	
+    	    <td>Are you for Real? Authentication in Dynamic IoT Systems</td>
+    	</tr>
+    	<tr>
+    	    <td>Maxime Ayrault, Etienne Borde, Ulrich Kühne and Jean Leneutre</td>	
+    	    <td>Moving Target Defense Strategy in Critical Embedded Systems: A Game-theoretic Approach</td>
+        </tr>
+        <tr>
+            <td>Minhao Qiu, Peter Bazan, Tobias Antesberger, Florian Bock and Reinhard German	</td>	
+    	    <td>Reliability assessment of multi-sensor perception system in automated driving functions</td>
+        </tr>
+        <tr>
+            <td>Bruno Dias, Naghmeh Ivaki and Nuno Laranjeiro	</td>	
+    	    <td>An Empirical Evaluation of the Effectiveness of Smart Contract Verification Tools</td>
+        </tr>
+        <tr>
+            <td>Tommaso Zoppi, Andrea Ceccarelli and Andrea Bondavalli	</td>	
+    	    <td>Detecting Intrusions by Voting Diverse Machine Learners: Is It Really Worth?</td>
+        </tr>
+        <tr>
+            <td>Raul Sena Ferreira, Jean Arlat, Jeremie Guiochet and Helene Waeselynck	</td>	
+    	    <td>Benchmarking Safety Monitors for Image Classifiers with Machine Learning</td>
+        </tr>
+        <tr>
+            <td>Michael Eischer and Tobias Distler	</td>	
+    	    <td>Egalitarian Byzantine Fault Tolerance</td>
+        </tr>
+        <tr>
+            <td>Christian Linder and Oliver Theel	</td>	
+    	    <td>Extending the Concept of Voting Structures to Support Path-Based Replication Strategies</td>
+        </tr>
+        <tr>
+            <td>Kaitlyn Lee, Michael Gowanlock and Bertrand Cambou	</td>	
+    	    <td>SABER-GPU: A Response-Based Cryptography Algorithm for SABER on the GPU</td>
+        </tr>
+        <tr>
+            <td>Ning Shen, Jyh-Haw Yeh, Hung-Min Sun and Chien-Ming Chen	</td>	
+    	    <td>A Practical and Secure Stateless Order Preserving Encryption for Outsourced Databases</td>
+        </tr>
+        <tr>
+            <td>Chunyan Mu</td>
+            <td>Integrating Information Flow Analysis in Unifying Theories of Programming</td>
+            
+        </tr>
+        <tr>
+            <td>Xuanyu Duan, Mengmeng Ge, Triet Huynh Minh Le, Faheem Ullah, Shang Gao, Xuequan Lu and M. Ali Babar	</td>	
+    	    <td>Automated Security Assessment for the Internet of Things</td>
+        
+        </tr>
+        <tr>
+            <td>Frederico Cerveira, Jomar Domingos, Raul Barbosa and Henrique Madeira	</td>	
+    	    <td>Measuring lead times for failure prediction</td>
+        </tr>
+        <tr>
+            <td>Fumio Machida and Ermeson Andrade	</td>	
+    	    <td>Availability Modeling for Drone Image Processing Systems with Adaptive Offloading</td>
+        </tr>
+        <tr>
+            <td>Stefan Klikovits and Paolo Arcaini	</td>	
+    	    <td>Handling Noise in Search-Based Scenario Generation for Autonomous Driving Systems</td>
+        </tr>
+        <tr>
+            <td>Shahid Khan and Joost-Pieter Katoen	</td>	
+    	    <td>Synergising Reliability Modelling Languages: BDMPs and Repairable DFTs</td>
+        </tr>
+
+    	
+
+	</table>
+
+
+    <h3>Fast Abstract Papers (total 3)</h3>
+    <table>
+    	<tr>
+    	    <td>Author(s)</td>
+    	    <td>Title</td>
+    	</tr>
+    	<tr>
+    	    <td>B Naresh Reddy</td>	
+    	    <td>Machine Learning Techniques for the Prediction of NoC Core Mapping Performance</td>
+    	</tr>
+    	<tr>
+    	    <td>B Naresh Reddy</td>	
+    	    <td>An Efficient Application Core Mapping Algorithm for Wireless Network-on-Chip</td>
+        </tr>
+        <tr>
+            <td>Bo-Chen Tai, Szu-Chuang Li and Yennun Huang</td>	
+    	    <td>A VAE Conversion Method for Private Data Linkage</td>
+        </tr>
+
+	</table> -->
+	
+	
+
+
+<!--
+	<h3>Statics</h3>
+	<ul>
+		<li>One keynote</li>
+		<li>25 Research papers</li>
+		<li>22 Fast abstracts</li>
+	</ul>
+
+	<h3>Schedule</h3>
+	<ul>
+		<li>Dec. 1: Reception (evening)</li>
+		<li>Dec. 2: Opening, keynote, technical sessions, panel, banquet</li>
+		<li>Dec. 3: Technical sessions, closing (early in the evening)</li>
+	</ul>
+-->
+
+<!--
+	<table>
+		<tr>
+			<th colspan="2">Sunday, December 1, 2019</th>
+		</tr>
+		<tr>
+			<td>17:30-20:00</td>
+			<td>Reception & Registration</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th colspan="2">Monday, December 2, 2019</th>
+		</tr>
+		<tr>
+			<td>08:00-17:00</td>
+			<td>Registration</td>
+		</tr>
+		<tr>
+			<td>09:00-09:15</td>
+			<td>Opening</td>
+		</tr>
+		<tr>
+			<td>09:15-10:15</td>
+			<td>Keynote</td>
+		</tr>
+		<tr>
+			<td>10:45-11:45</td>
+			<td>Technical Sessions</td>
+		</tr>
+		<tr>
+			<td>12:00-13:00</td>
+			<td>Lunch</td>
+		</tr>
+		<tr>
+			<td>13:00-15:30</td>
+			<td>Technical Sessions</td>
+		</tr>
+		<tr>
+			<td>16:00-17:30</td>
+			<td>Panel Discussion</td>
+		</tr>
+		<tr>
+			<td>18:00-20:30</td>
+			<td>Banquet</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<th colspan="2">Tuesday, December 3, 2019</th>
+		</tr>
+		<tr>
+			<td>08:00-16:30</td>
+			<td>Registration</td>
+		</tr>
+		<tr>
+			<td>09:00-12:00</td>
+			<td>Technical Sessions</td>
+		</tr>
+		<tr>
+			<td>12:00-13:00</td>
+			<td>Lunch</td>
+		</tr>
+		<tr>
+			<td>13:00-16:30</td>
+			<td>Technical Sessions</td>
+		</tr>
+		<tr>
+			<td>16:30-16:45</td>
+			<td>Closing</td>
+		</tr>
+	</table>
+
+	<h3>Keynote</h3>
+	<p>
+		<strong>Title</strong>
+		Dependability and Fault-Tolerance of Cooperative Mobile Robots: The Gap Between Theory and Pragmatism
+	</p>
+	<p>
+		<strong>Speaker</strong>
+		Xavier Défago (Tokyo Institute of Technology, Japan)
+	</p>
+	<p>
+		<strong>Abstract</strong>
+		From an abstract viewpoint, groups/fleets/swarms of mobile robots can be seen as an extended form of distributed system where nodes are mobile and where they can interact through their actions on the environment. Due to demographic pressure on many world economies, robot and device coordination is bound to become gradually more prevalent in infrastructure-like systems over the next decades. As a result, it is becoming increasingly more important to ensure the dependability of such systems.
+		In this talk, I will highlight the gap between theory and practice of fault-tolerance cooperative mobile robot systems. The first part of the talk will overview important theoretical results in cooperative mobile robotics and on self-stabilization. The second part will discuss multi-agent systems problems such as pickup and delivery and iterative multi-agent path finding. The third part will briefly discuss about Byzantine fault-tolerance in actual robot systems.
+	</p>
+
+	<h3>Panel Discussion</h3>
+
+	<p>
+		<strong>Title</strong>
+		Safety 2.0 - Safety in the next era
+	</p>
+	<p>
+		<strong>Coordinator</strong>
+		Nobuyasu Kanekawa (Hitachi, Ltd.)
+	</p>
+	<p>
+		<strong>Panelists</strong>
+		Masao Mukaidono (Meiji University),
+		Masao Dohi (IDEC Corporation),
+		Hiroo Kanamaru (Mitsubishi Electric)
+	</p>
+
+	<p>
+		<strong>Abstract</strong>
+		Nowadays, holistic approach toward safety is demanded worldwide. In this panel session, the panelists introduce the concepts of Safety 2.0 which is newly proposed and including concept of collaborative safety in addition to the conventional functional safety.  Furthermore, the panelists discuss on how the safety (including ANSHIN and health) which leads to our wellbeing should be, and how should we realize it.
+	</p>
+
+	<h2 id="program">Final program</h2>
+	<p>
+		<a href="program_07.pdf">The final program is available.</a>
+	</p>
+	-->
+</div><!-- /#contents -->
+
+<footer>
+    <div align="center" style="margin-bottom:30px">  
+    <img alt="IEEE logo" src="images/ieeelogo.gif" width="220px" style="margin-right:80px" />
+	<img alt="IEEE logo" src="images/logoIEEE2.png" width="220px" style="margin-right:80px" />
+	<img alt="THU logo" src="images/2022_thu_logo.png" width="220px" style="margin-right:80px"/>
+	<img alt="Huawei logo" src="images/2022_huawei_logo.png" height="80px" />
+    </div>
+	<div class="footmenu">
+	<div class="copyright">Copyright &#169; PRDC 2023</div><!-- /.copyright -->
+	</div><!-- /.copyright -->
+</footer>
+
+<!-- /.totop -->
+</body>
+</html>

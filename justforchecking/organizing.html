@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PRDC 2019 Organizing Committee</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/prdc2019logow.png" alt="prdc2019 logo"></a></h1>
+		<p class="summary">
+		24th Pacific Rim International Symposium on Dependable Computing (PRDC 2019)
+		<br>
+		December 1-3, 2019, Kyoto, Japan
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+		<ul class="gnav">
+			<!--
+			<li><a href="index.html">Top</a></li>
+		-->
+			<li class="subnav"><a href="cfp.html">Calls</a>
+				<ul>
+					<li><a href="cfp.html?id=paper">Call for Papers</a></li>
+					<li><a href="cfp.html?id=fast">Call for Fast Abstracts</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="index.html">Program</a>
+				<ul>
+					<li><a href="index.html">Program at a glance</a></li>
+					<li><a href="index.html">Program</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="organizing.html">Committees</a>
+				<ul>
+					<li><a href="organizing.html?id=organizing">Organizing Committee</a></li>
+					<li><a href="organizing.html?id=steering">Steering Committee</a></li>
+					<li><a href="organizing.html">Program Committee</a></li>
+				</ul>
+			</li>
+
+			<li class="subnav"><a href="index.html">Attending</a>
+				<ul>
+					<li><a href="index.html">Registration</a></li>
+					<li><a href="index.html">Venue</a></li>
+					<li><a href="index.html">Transportation</a></li>
+					<li><a href="index.html">Hotels</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="index.html">More</a>
+				<ul>
+					<li><a href="http://prdc.dependability.org/">Past events</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+	<div id="topicpath"><a href="index.html">Top</a> &gt; Committees</div><!-- /#topicpath -->
+
+	<h2 id="organizing">Organizing Committee</h2>
+	<ul>
+		<li>General Chair: Satoshi Fukumoto, Tokyo Metropolitan University, Japan</li>
+		<li>Program Co-Chair: Hiroyuki Okamura, Hiroshima University, Japan</li>
+		<li>Program Co-Chair: Zheng Zheng, Beihang University, China</li>
+		<li>Local Arrangement Co-Chair: Masayoshi Yoshimura, Kyoto Sangyo University, Japan</li>
+		<li>Local Arrangement Co-Chair: Masayuki Arai, Nihon University, Japan</li>
+		<li>Publicity Chair: Tatsuhiro Tsuchiya, Osaka University, Japan</li>
+		<li>Publication Chair: Mamoru Ohara, Tokyo Metropolitan Industrial Technology Research Institute, Japan</li>
+		<li>Finance Chair: Masayuki Arai, Nihon University, Japan</li>
+	</ul>
+
+	<h2 id="steering">Steering Committee</h2>
+	<ul>
+		<li>Yennun Huang, Academia Sinica (Chair)</li>
+		<li>Leon Alkalai, California Institute of Technology</li>
+		<li>Takashi Nanya, University of Tokyo</li>
+		<li>Nobuyasu Kanekawa, Hitachi Research Lab</li>
+		<li>Jin Song Dong, National University of Singapore</li>
+		<li>Karthik Pattabiraman, University of British Columbia</li>
+		<li>Gernot Heiser, University of New South Wales</li>
+		<li>Sy-Yen Kuo, National Taiwan University</li>
+		<li>Michael Lyu, Chinese University of Hong Kong</li>
+		<li>Zhi Jin, Peking University</li>
+		<li>Dongseong Kim, The University of Queensland</li>
+	</ul>
+
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+	<div class="copyright">Copyright &#169; PRDC 2019</div><!-- /.copyright -->
+	</div><!-- /.copyright -->
+</footer>
+
+<!-- /.totop -->
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PRDC 2019</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/prdc2019logow.png" alt="prdc2019 logo"></a></h1>
+		<p class="summary">
+		24th Pacific Rim International Symposium on Dependable Computing (PRDC 2019)
+		<br>
+		December 1-3, 2019, Kyoto, Japan
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+		<ul class="gnav">
+			<!--
+			<li><a href="index.html">Top</a></li>
+		-->
+			<li class="subnav"><a href="cfp.html">Calls</a>
+				<ul>
+					<li><a href="cfp.html?id=paper">Call for Papers</a></li>
+					<li><a href="cfp.html?id=fast">Call for Fast Abstracts</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="index.html">Program</a>
+				<ul>
+					<li><a href="index.html">Program at a glance</a></li>
+					<li><a href="index.html">Program</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="organizing.html">Committees</a>
+				<ul>
+					<li><a href="organizing.html?id=organizing">Organizing Committee</a></li>
+					<li><a href="organizing.html?id=steering">Steering Committee</a></li>
+					<li><a href="organizing.html">Program Committee</a></li>
+				</ul>
+			</li>
+
+			<li class="subnav"><a href="index.html">Attending</a>
+				<ul>
+					<li><a href="index.html">Registration</a></li>
+					<li><a href="index.html">Venue</a></li>
+					<li><a href="index.html">Transportation</a></li>
+					<li><a href="index.html">Hotels</a></li>
+				</ul>
+			</li>
+			<li class="subnav"><a href="index.html">More</a>
+				<ul>
+					<li><a href="http://prdc.dependability.org/">Past events</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- /.inner -->
+</nav>
+
+<div class="slide">
+	<ul class="slideInner">
+		<li><a href="index.html"><img src="images/ph01.jpg" alt=""></a></li>
+		<li><a href="index.html"><img src="images/ph02.jpg" alt=""></a></li>
+		<li><a href="index.html"><img src="images/ph03.jpg" alt=""></a></li>
+	</ul>
+	<div class="slidePrev"><img src="images/nav_prev.png" alt="previous"></div>
+	<div class="slideNext"><img src="images/nav_next.png" alt="next"></div>
+	<div class="controlNav"></div>
+</div><!-- /.slide -->
+
+<div id="contents">
+	<div id="main">
+		<h2 id="news">News</h2>
+		<dl class="info">
+			<dt><span>04/04/2019</span></dt>
+			<dd>
+				 The site is open.
+			</dd>
+			<!--
+			<dt><span>20XX-01-01</span></dt>
+			<dd>
+				 bra bra
+			</dd>
+		-->
+		</dl>
+
+
+		<h2 id="news">About</h2>
+		<dl class="info">
+			<p>
+				IEEE PRDC 2019 is the twenty-forth event in the series of symposia started in 1989 that are devoted to dependable and fault-tolerant computing. PRDC is recognized as the main event in the Pacific area that covers many dimensions of dependability and fault tolerance, encompassing fundamental theoretical approaches, practical experimental projects, and commercial components and systems. As applications of computing systems have permeated into all aspects of daily life, the dependability of computing system has become increasingly critical. This symposium provides a forum for countries around the Pacific Rim and other areas of the world to exchange ideas for improving the dependability of computing systems.
+			</p>
+		</dl>
+	</div><!-- /#main -->
+	<div id="sub">
+		<h3>Important dates</h3>
+		<ul class="submenu">
+			<li>Paper Submission Due: <strong>July 15, 2019</strong></li>
+			<li>Notification of Acceptance for Papers: <strong>August 15, 2019</strong></li>
+			<li>Fast Abstracts Submission Due: <strong>September 15, 2019</strong></li>
+			<li>Notification of Acceptance for Fast Abstracts: <strong>September 25, 2019</strong></li>
+			<!--
+			<li> Camera-Ready Paper Due : <strong>October 5, 2019</strong></li>
+		-->
+		</ul>
+		<h3>Sponsors (tentative)</h3>
+		<ul class="submenu">
+			<li><a href="https://www.computer.org/">IEEE Computer Society</a></li>
+			<li><a href="https://www.tmu.ac.jp/english/">Tokyo Metropolitan University</a></li>
+			<li><a href="https://www.hiroshima-u.ac.jp/en/">Hiroshima University</a></li>
+			<li><a href="http://www.kyoto-su.ac.jp/index-e.html">Kyoto Sangyo University</a></li>
+			<li><a href="http://www.nihon-u.ac.jp/en/">Nihon University</a></li>
+		</ul>
+
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+  <!--
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">Top</a></li>
+			<li><a href="http://photo.sanographix.net/" target="_blank">Photo by sanographix</a></li>
+		</ul>
+	</div>--> <!-- /.footmenu -->
+	<div class="copyright">Copyright &#169; PRDC 2019.
+		<a href="http://photo.sanographix.net/" target="_blank">Photo by sanographix</a> <!-- /.copyright -->
+	</div>
+</footer>
+
+</body>
+</html>

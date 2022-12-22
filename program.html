@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>PRDC 2023 Program</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/2022_logo.png" alt="prdc logo" width="200px" align="middle"></a></h1>
+		<p class="summary">
+		28th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC 2023)
+		<br>
+		November 28-December 1, 2023, Singapore, Singapore + (Virtual options)
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+		<ul class="gnav">
+			<!--
+			<li><a href="index.html">Top</a></li>
+		-->
+			<li class="subnav"><a href="cfp.html">Calls</a>
+
+	        <ul>
+		        <li><a href="cfp.html">Call for Papers</a></li>
+		        <li><a href="cfp-industry.html">Call for Industry Track Papers</a></li>
+		        <li><a href="cfp-fa.html">Call for Fast Abstracts</a></li>
+	        </ul>
+    	    </li>
+			<li class="subnav"><a href="program.html">Program</a>
+	        <ul>
+		        <li><a href="program.html?id=glance">Program at a glance</a></li>
+		        <li><a href="program.html?id=program">Full Program</a></li>
+		        <li><a href="keynote.html">Keynote Speeches</a></li>
+	        </ul>
+	        </li>
+			<li class="subnav"><a href="organizing.html">Committees</a>
+				<ul>
+					<li><a href="organizing.html?id=organizing">Organizing Committee</a></li>
+					<li><a href="organizing.html?id=steering">Steering Committee</a></li>
+					<li><a href="organizing.html?id=tpc">Program Committee</a></li>
+					<li><a href="organizing.html?id=industrypc">Industry Program Committee</a></li>
+					<li><a href="organizing.html?id=fapc">Fast Abstract Committee</a></li>
+				</ul>
+			</li>
+
+			<li class="subnav"><a href="attending.html">Attending</a>
+	        <ul>
+		    <li><a href="attending.html?id=general">General Information</a></li>
+		    <li><a href="attending.html?id=registration">Registration</a></li>
+		    <li><a href="attending.html?id=venue">Venue</a></li>
+	        </ul>
+	        </li>
+
+			<li class="subnav"><a href="index.html">More</a>
+				<ul>
+					<li><a href="http://prdc.dependability.org/">Past events</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+	<div id="topicpath"><a href="index.html">Top</a> &gt; Program</div>
+	
+	<h2 id="program">Program at a Glance</h2>
+	
+	<center><img id="glance" src="glance.jpg" width="600px"></center>
+	<br>
+	
+	<h2 id="awards">Awards</h2>
+	
+	<h3>Best Paper Award</h3>
+                <p style="margin-top: 8px"><font color="blue">Tracing Processing of Service Requests in Cloud Environments</font><br>
+                <i>Yinqin Zhao (Tsinghua University), Chang Liu (Tsinghua University), Tao Yu (Tsinghua University), Long Wang (Tsinghua University), Xuanqing Shi (Nanjing University of Aeronautics and Astronautics), Yong Yang (Peking University), Ying Li (Peking University), Zhengang Wang (Huawei Corporation) and Dongdong Shangguan (Huawei Corporation)</i></p>
+	
+	<h3>Best Paper Award Runners Up</h3>
+	<p style="margin-top: 8px"><font color="blue">Modeling and Evaluating the Effects of Jamming Attacks on Connected Automated Road Vehicles</font><br>
+                <i>Mehdi Maleki (RISE Research Institutes of Sweden), Mateen Malik (RISE Research Institutes of Sweden), Peter Folkesson (RISE Research Institutes of Sweden), Behrooz Sangchoolie (RISE Research Institutes of Sweden) and Johan Karlsson (Chalmers University of Technology)</i></p>
+	<p style="margin-top: 8px"><font color="blue">Safe Rust Code Recommendation Based on Siamese Graph Neural Network</font><br>
+                <i>Xiuwen Lu (Fudan University), Zhicong Zhang (Fudan University) and Hui Xu (Fudan University)</i><br></p>
+                
+	
+	<h3>Best Student Paper Award</h3>
+	<p style="margin-top: 8px"><font color="blue">Safe Rust Code Recommendation Based on Siamese Graph Neural Network</font><br>
+                <i>Xiuwen Lu (Fudan University), Zhicong Zhang (Fudan University) and Hui Xu (Fudan University)</i><br></p>
+	
+	<h3>Best Industry Paper Award</h3>
+	
+	<p style="margin-top: 8px"><font color="blue">An Industrial Approach for Model-Based Reliability-Oriented System Design</font><br>
+                <i>Juan Manuel Morote (University of Castilla-La Mancha), Jose Luis de la Vara (University of Castilla-La Mancha), Giovanni Giachetti (University of Castilla-La Mancha), Clara Ayora (Tree Technology S.A.) and Luis Alonso (Reuse Company)</i><br></p>
+	
+	<h3>Best Industry Paper Award Runners Up</h3>
+    <p style="margin-top: 8px"><font color="blue"> Model-Based Generation and Analysis Toolset of Fault Trees With Heterogeneous Failure Events</font><br>
+                <i>Nicolas Rapin (CEA LIST), Boutheina Bannour (CEA LIST) and Adedjouma Morayo (CEA LIST)</i></p>
+	
+	<h2 id="fullprogram">Full Program (UTC time)</h2>
+	
+	<table>
+		<tr>
+			<th colspan="2"><strong>November 28, 2023 (Monday)</strong></th>
+		</tr>
+		<tr>
+			<td width="100px" border="1px solid"><center>11:30 ‒ 17:00</center></td>
+			<td><center>Registration</center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>12:00 ‒ 12:15</center></td>
+			<td><center>
+			    <strong>Session A: Opening Ceremony</strong><br>
+                Prof. Long Wang (Tsinghua University, General Chair)
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>12:15 ‒ 13:15</center></td>
+			<td><center>
+			    <strong>Session B: Keynote Speech I</strong><br>
+			    Session Chair: Long Wang<br>
+                <a href="keynote.html?id=paulo"><strong><font color="blue">Cyber Resilience explained through a Blockchain example</font></strong></a><br>
+                <a href="keynote.html?id=paulo">Prof. Paulo E. Verissimo (KAUST)</a>
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:15 ‒ 13:30</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:30 ‒ 14:30</center></td>
+			<td><center>
+			    <strong>Session C: Keynote Speech II</strong><br>
+			    Session Chair: Long Wang<br>
+			    <a href="keynote.html?id=kishor"><strong><font color="blue">Rethinking Software Fault Tolerance</font></strong></a><br>
+                <a href="keynote.html?id=kishor">Prof. Kishor S. Trivedi (Duke University)</a>
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:30 ‒ 14:45</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:45 ‒ 16:45</center></td>
+			<td><center><strong>
+			    Session D1: Research Session I: Machine Learning Safety and Reliability</strong><br>
+                Session Chair: Ankur Shukla<br></center>
+                <br>
+                <font color="blue">How Data Diversification Benefits the Reliability of Three-version Image Classification Systems</font><br>
+                <i>Mitsuho Takahashi (University of Tsukuba), Fumio Machida (University of Tsukuba) and Qiang Wen (University of Tsukuba)</i><br>
+                <p style="margin-top: 8px"><font color="blue">Automating Safety Argument Change Impact Analysis for Machine Learning Components</font><br>
+                <i>Carmen Carlan (fortiss GmbH), Lydia Gauerhof (Robert Bosch GmbH, Corporate Research), Barbara Gallina (Mälardalen University) and Simon Burton (Fraunhofer Institute for Cognitive Systems)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Characterizing Deep Learning Neural Network Failures between Algorithmic Inaccuracy and Transient Hardware Faults</font><br>
+                <i>Sabuj Laskar (University of Iowa), Md Hasanur Rahman (University of Iowa), Bohan Zhang (University of Iowa) and Guanpeng Li (University of Iowa)</i></p>
+                <p style="margin-top: 8px"><font color="blue">SiMOOD: Evolutionary Testing Simulation with Out-Of-Distribution Images</font><br>
+                <i>Raul Ferreira (LAAS-CNRS), Joris Guerin (LAAS-CNRS), Jeremie Guiochet (LAAS-CNRS) and Helene Waeselynck (LAAS-CNRS)</i></p>
+            </td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:45 ‒ 16:25</center></td>
+			<td><center>
+			<strong>Session D2: Fast Abstract Session</strong><br>
+                Session Chair: Zhen Dong<br>
+            </center>
+            <br>
+                <font color="blue">	Towards Building Secure and Reconfigurable Virtual Networks on Multi-Tenant Data Centers</font><br>
+                <i>Jinwoo Kim (Kwangwoon University) and Jaehyun Nam (Dankook University)</i><br>
+                <p style="margin-top: 8px"><font color="blue">Comparison of Meta-Heuristic Algorithms for Task Scheduling in Distributed Stream Processing</font><br>
+                <i>Dohan Kim (Kyungpook National University), Aming Wu (Kyungpook National University) and Young-Woo Kwon (Kyungpook National University)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Stuck-at Fault Tolerance in DNN Using Statistical data</font><br>
+                <i>Tomohiro Ishii (Chiba University) and Kazuteru Namba (Chiba University)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Extracting Network Knowledge and Monitoring Network Status on Cloud Container Platforms</font><br>
+                <i>Yinqin Zhao (Tsinghua University) and Long Wang (Tsinghua University)</i></p>
+                <p style="margin-top: 8px"><font color="blue">	Progressive Evolution Scheme with Socialization Swarm for Privacy Blockchain</font><br>
+																																				   <i>Daoqi Han (Beijing University of Posts and Telecommunications), Tao Yu (Tsinghua University) and Yueming Lu (Beijing University of Posts and Telecommunications)</i></p>
+            </td>
+		</tr>
+	</table>
+	
+	<table>
+		<tr>
+			<th colspan="2"><strong>November 29, 2023 (Tuesday)</strong></th>
+		</tr>
+		<tr>
+			<td width="100px" border="1px solid"><center>11:30 ‒ 17:00</center></td>
+			<td><center>Registration</center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>12:00 ‒ 13:00</center></td>
+			<td><center>
+			    <strong>Session A: Keynote Speech III</strong><br>
+			    Session Chair: Long Wang<br>
+			     <a href="keynote.html?id=zhendong"><strong><font color="blue">Reimagining the Engineering of Software</font></strong></a><br>
+                <a href="keynote.html?id=zhendong">Prof. Zhendong Su (ETH Zurich)</a>
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:00 ‒ 13:15</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:15 ‒ 14:45</center></td>
+			<td><center><strong>
+			    Session B: Best Paper Nominees</strong><br>
+                Session Chair: Ting Su<br></center>
+			    <br>
+                <font color="blue">Safe Rust Code Recommendation Based on Siamese Graph Neural Network</font><br>
+                <i>Xiuwen Lu (Fudan University), Zhicong Zhang (Fudan University) and Hui Xu (Fudan University)</i><br>
+                <p style="margin-top: 8px"><font color="blue">Modeling and Evaluating the Effects of Jamming Attacks on Connected Automated Road Vehicles</font><br>
+                <i>Mehdi Maleki (RISE Research Institutes of Sweden), Mateen Malik (RISE Research Institutes of Sweden), Peter Folkesson (RISE Research Institutes of Sweden), Behrooz Sangchoolie (RISE Research Institutes of Sweden) and Johan Karlsson (Chalmers University of Technology)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Tracing Processing of Service Requests in Cloud Environments</font><br>
+                <i>Yinqin Zhao (Tsinghua University), Chang Liu (Tsinghua University), Tao Yu (Tsinghua University), Long Wang (Tsinghua University), Xuanqing Shi (Nanjing University of Aeronautics and Astronautics), Yong Yang (Peking University), Ying Li (Peking University), Zhengang Wang (Huawei Corporation) and Dongdong Shangguan (Huawei Corporation)</i></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:45 ‒ 15:00</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>15:00 ‒ 17:00</center></td>
+			<td><center><strong>
+			    Session C1: Research Session II: Critical Infrastructure Security</strong><br>
+                Session Chair: Leonardo Montecchi<br></center>
+                <br>
+                <font color="blue">Enhanced software development process for CubeSats to cope with space radiation faults</font><br>
+                <i>David Paiva (CISUC, University of Coimbra), Raffael Lima (COENE, INPE), Manoel Carvalho (COENE, INPE), Fátima Mattiello-Francisco (COEPE, INPE) and Henrique Madeira (CISUC, University of Coimbra)</i><br>
+                <p style="margin-top: 8px"><font color="blue">A Heterogeneous Redundant Architecture for Industrial Control System Security</font><br>
+                <i>Zhihao Dai (The University of Warwick), Matthew Leeke (The University of Warwick), Yulong Ding (Southern University of Science and Technology) and Shuang-Hua Yang (Southern University of Science and Technology)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Random Bad State Estimator to Address False Data Injection in Critical Infrastructures</font><br>
+                <i>Giulio Masetti (Istituto di Scienza e Tecnologia dell'Informazione, Consiglio Nazionale delle Ricerche), Silvano Chiaradonna (Istituto di Scienza e Tecnologia dell'Informazione, Consiglio Nazionale delle Ricerche), Leonardo Robol (University of Pisa) and Felicita Di Giandomenico (Istituto di Scienza e Tecnologia dell'Informazione, Consiglio Nazionale delle Ricerche)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Towards a Dependable Energy Market: Proof of Authority in a Blockchain-based Peer-to-Peer Microgrid</font><br>
+                <i>Joe Hewett (The University of Warwick), Mark Etman (The University of Warwick), Robbie Marseglia (The University of Warwick), Tomas Mella Pickersgill (The University of Warwick) and Matthew Leeke (The University of Warwick)</i></p>
+            </td>
+		</tr>
+		<tr>
+			<td width="100px"><center>15:00 ‒ 17:00</center></td>
+			<td><center><strong>
+			    Session C2: Research Session III: Software and Network Security</strong><br>
+                Session Chair: Hui Xu<br></center>
+                <br>
+                <font color="blue">Performance and Security Evaluation of a Moving Target Defense Based on a Software-Defined Networking Environment</font><br>
+                <i>Minjune Kim (University of Queensland), Jin-Hee Cho (Virginia Tech), Hyuk Lim (Korea Institute of Energy Technology (KENTECH)), Terrence J. Moore (US Army Research Lab.), Frederica F. Nelson (US Army Research Lab.) and Dongseong Kim (University of Queensland)</i><br>
+                <p style="margin-top: 8px"><font color="blue">On the Evaluation of Three Pre-Injection Analysis Techniques Suitable for Model-Implemented Fault- and Attack Injection</font><br>
+                <i>Peter Folkesson (RISE Research Institutes of Sweden), Behrooz Sangchoolie (RISE Research Institutes of Sweden), Pierre Kleberger (RISE Research Institutes of Sweden) and Nasser Nowdehi (Volvo AB)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Security Modeling and Analysis of Moving Target Defense in Software Defined Networks</font><br>
+                <i>Júlio Mendonça (University of Luxembourg), Minjune Kim (The University of Queensland), Rafal Graczyk (University of Luxembourg), Marcus Völp (University of Luxembourg) and Dongseong Kim (The University of Queensland)</i></p>
+                <p style="margin-top: 8px"><font color="blue">A Software Vulnerability Dataset of Large Open Source C/C++ Projects</font><br>
+                <i>José D'Abruzzo Pereira (University of Coimbra), João Henggeler Antunes (University of Coimbra) and Marco Vieira (University of Coimbra)</i></p>
+            </td>
+		</tr>
+	</table>
+	
+	<table>
+		<tr>
+			<th colspan="2"><strong>November 30, 2023 (Wednesday)</strong></th>
+		</tr>
+		<tr>
+			<td width="100px" border="1px solid"><center>11:30 ‒ 17:00</center></td>
+			<td><center>Registration</center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>12:00 ‒ 13:00</center></td>
+			<td><center>
+			    <strong>Session A: Keynote Speech IV</strong><br>
+			    Session Chair: Long Wang<br>
+			    <a href="keynote.html?id=tao"><strong><font color="blue">AI for Software Dependability: How Far Can We Go?</font></strong></a><br>
+                <a href="keynote.html?id=tao">Prof. Tao Xie (Peking University)</a>
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:00 ‒ 13:15</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>13:15 ‒ 14:15</center></td>
+			<td><center><strong>
+			    Session B: Best Industry Paper Nominees</strong><br>
+                Session Chair: Cheng Wang<br></center>
+			<br>
+                <font color="blue">An Industrial Approach for Model-Based Reliability-Oriented System Design</font><br>
+                <i>Juan Manuel Morote (University of Castilla-La Mancha), Jose Luis de la Vara (University of Castilla-La Mancha), Giovanni Giachetti (University of Castilla-La Mancha), Clara Ayora (Tree Technology S.A.) and Luis Alonso (Reuse Company)</i><br>
+                <p style="margin-top: 8px"><font color="blue"> Model-Based Generation and Analysis Toolset of Fault Trees With Heterogeneous Failure Events</font><br>
+                <i>Nicolas Rapin (CEA LIST), Boutheina Bannour (CEA LIST) and Adedjouma Morayo (CEA LIST)</i></p>  
+			</td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:15 ‒ 14:30</center></td>
+			<td><center>
+			    Coffee Break
+            </center></td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:30 ‒ 16:30</center></td>
+			<td><center><strong>
+			    Session C1: Research Session IV: Fault Tolerance and Resilience</strong><br>
+                Session Chair: Jamilson Dantas<br></center>
+                <br>
+                <font color="blue">AnoDe: A Log-based Self-Supervised Framework to Detect Scrubber Failures in SRAM-FPGA</font><br>
+                <i>Trishna Rajkumar (KTH Royal Institute of Technology) and Johnny Öberg (KTH Royal Institute of Technology)</i><br>
+                <p style="margin-top: 8px"><font color="blue">Understanding the Resiliency of Cloud Storage Services</font><br>
+                <i>Archita Ghosh (Indian Institute of Science) and J Lakshmi (Indian Institute of Science)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Reliability Analysis of Multi-state System Based on Irrelevance Coverage Model</font><br>
+                <i>Kangning Song (Wuhan University of Technology), Siwei Zhou (Wuhan University of Technology), Luyao Ye (Wuhan University of Technology), Piaoyi Liu (Wuhan University of Technology), Jing Tian (Wuhan University of Technology) and Jianwen Xiang  (Wuhan University of Technology)</i></p>
+                <p style="margin-top: 8px"><font color="blue">Are UAVs’ Flight Controller Software Reliable?</font><br>
+                <i>Anamta Khan (University of Coimbra), Naghmeh Ivaki (University of Coimbra) and Henrique Madeira (University of Coimbra)</i></p>
+            </td>
+		</tr>
+		<tr>
+			<td width="100px"><center>14:30 ‒ 15:30</center></td>
+			<td><center><strong>
+			    Session C2: Research Session V: Security and Privacy</strong><br>
+                Session Chair: Naohiro Hayashibara<br></center>
+                <br>
+                <font color="blue">Developing a GPT-3-based Automated Victim for Advance Fee Fraud Disruption</font><br>
+                <i>Joe Hewett (The University of Warwick) and Matthew Leeke (The University of Warwick)</i><br>
+                <p style="margin-top: 8px"><font color="blue">HERB+: Evolving an Industrial-strength Privacy Preserving Machine Learning Framework</font><br>
+                <i>Qianying Liao (University of Coimbra), Alexandre Cortez Santos (University of Coimbra), Bruno Cabral (University of Coimbra), João Paulo Fernande (University of Porto) and Nuno Lourenço (University of Coimbra)</i></p>
+            </td>
+		</tr>
+		<tr>
+			<td width="100px"><center>15:40 ‒ 16:40</center></td>
+			<td><center>
+			    <strong>Session D: Industry Session</strong><br>
+                Session Chair: Xiao Chen
+            </center>
+            <br>
+                <font color="blue">Examining the Utility of Differentially Private Synthetic Data Generated using Variational Autoencoder with Tensorflow Privacy</font><br>
+                <i>Bo-Chen Tai (CITI, Academia Sinica), Szu Chuang Li (Tamkang University), Yennun Huang (CITI, Academia Sinica) and Pang-Chieh Wang (ICL, ITRI)</i><br>
+                <p style="margin-top: 8px"><font color="blue">Signature of Electrical System Reliability Used Inside Aircraft</font><br>
+                <i>Emad Kareem Mutar(Directorate of Education Babylon)</i></p>
+            </td>
+		</tr>
+	</table>
+    
+</div><!-- /#contents -->
+
+<footer>
+    <div align="center" style="margin-bottom:30px">  
+    <img alt="IEEE logo" src="images/ieeelogo.gif" width="220px" style="margin-right:80px" />
+	<img alt="IEEE logo" src="images/logoIEEE2.png" width="220px" style="margin-right:80px" />
+	<img alt="THU logo" src="images/2022_thu_logo.png" width="220px" style="margin-right:80px"/>
+	<img alt="Huawei logo" src="images/2022_huawei_logo.png" height="80px" />
+    </div>
+	<div class="footmenu">
+	<div class="copyright">Copyright &#169; PRDC 2023</div><!-- /.copyright -->
+	</div><!-- /.copyright -->
+</footer>
+
+<!-- /.totop -->
+</body>
+</html>
