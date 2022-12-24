@@ -208,10 +208,11 @@ header {
 }
 
 .summary {
-	position:absolute;
-	top:0;
-	right:10px;
-	margin:0;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	margin: 0;
+	font-size: larger;
 }
 
 /*================================================
