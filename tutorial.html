@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>PRDC 2023 Program</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script>
+$(function($){
+	if ($('#spMenu').css('display') == 'block') {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	} else {
+		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
+	}
+	$('.totop').scrollshow({position : 500});
+});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<h1><a href="index.html"><img src="images/2023_logo.png" alt="prdc logo" width="100px" align="middle"></a></h1>
+		<p class="summary">
+			28th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC 2023)
+			<br>
+			24-27, OCT, 2023, Singapore, Singapore (Virtual+Physical)
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<nav>
+	<div class="inner">
+		<ul class="gnav">
+			<!--
+			<li><a href="index.html">Top</a></li>
+		-->
+			<li class="subnav"><a href="cfp.html">Calls</a>
+
+	        <ul>
+		        <li><a href="cfp.html">Call for Papers</a></li>
+		        <li><a href="cfp-industry.html">Call for Industry Track Papers</a></li>
+		        <li><a href="cfp-fa.html">Call for Fast Abstracts</a></li>
+		     	<li><a href="cfp-first.html">Call for Journal-first Presentations</a></li>
+
+	        </ul>
+    	    </li>
+			<li class="subnav"><a href="program.html">Program</a>
+	        <ul>
+		        <li><a href="program.html?id=glance">Program at a glance</a></li>
+		        <li><a href="program.html?id=program">Full Program</a></li>
+		        <li><a href="keynote.html">Keynote Speeches</a></li>
+		        <li><a href="tutorial.html">Tutorial</a></li>
+	        </ul>
+	        </li>
+			<li class="subnav"><a href="organizing.html">Committees</a>
+				<ul>
+					<li><a href="organizing.html?id=organizing">Organizing Committee</a></li>
+					<li><a href="organizing.html?id=steering">Steering Committee</a></li>
+					<li><a href="organizing.html?id=tpc">Program Committee</a></li>
+					<li><a href="organizing.html?id=industrypc">Industry Program Committee</a></li>
+					<li><a href="organizing.html?id=fapc">Fast Abstract Committee</a></li>
+				</ul>
+			</li>
+
+			<li class="subnav"><a href="attending.html">Attending</a>
+	        <ul>
+		    <li><a href="attending.html?id=general">General Information</a></li>
+		    <li><a href="attending.html?id=registration">Registration</a></li>
+		    <li><a href="attending.html?id=venue">Venue</a></li>
+	        </ul>
+	        </li>
+
+			<li class="subnav"><a href="index.html">More</a>
+				<ul>
+					<li><a href="http://prdc.dependability.org/">Past events</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</div><!-- /.inner -->
+</nav>
+
+<div id="contents">
+	<div id="topicpath"><a href="index.html">Top</a> &gt; Keynote</div>
+
+
+	<h2 >Two tutorials that are related to the theme of PRDC conference series.</h2>
+
+
+	<h3 style="color:black;background-color:#F1F1F1;"><center>Tutorial 1 &nbsp;&nbsp;&nbsp;<strong>The K Framework: A tool kit for language semantics and verification</strong></center></h3>
+
+		<strong>Abstract</strong>
+	<p>
+The K Framework (https://kframework.org/) provides a set of tools for developing programming languages and formal analysis tools. By writing a single description of your language’s syntax and operational semantics, you can use K to automatically extract a parser, interpreter, symbolic execution engine, and many more tools for your language. This approach scales well: K implementations have been built for many mainstream programming languages (C, Rust, Java, Python, EVM, to name a few), and K is used in practice every day for real verification problems.</p>
+
+
+<p>This tutorial is aimed at anyone who is interested in programming language implementation or program verification, and will be broken down into two main sessions (AM and PM session):</p>
+
+<p>AM session: We will build a simple imperative language in K, where we will define syntax and operational semantics of the language we are building. With the language definition in hand, we will take advantage of K’s support for deductive verification to write some simple proofs over programs. By the end of this session, the attendees should be able to implement and verify their next research DSL or language of interest using K.</p>
+
+<p>PM session: We will verify the properties of Ethereum smart contracts using KEVM, a complete formal semantics of Ethereum Virtual Machine (EVM). To provide the attendees with the necessary background knowledge, we will go through the basics of blockchain, EVM, Solidity—the most popular smart contract language, and Foundry—a reliable and easy-to-setup tool that is widely used by smart contract developers and auditors, before moving onto KEVM. By the end of this session, the attendees will be able to prove properties of Ethereum smart contracts by defining them through test functions in Foundry and verifying them using KEVM.</p>
+
+		<strong>NOTE TO ATTENDEE</strong>
+<p>If you want to join the hands-on sessions, please install K and KEVM prior to the tutorial as it may take 30min to 1 hour to install. This can be done using the K Framework installer `kup`, with the instructions available in its repository: https://github.com/runtimeverification/kup.	</p>
+
+
+		<strong>SPEAKER</strong>
+
+	<p style="text-align: center;" id="reza"><img alt="Reza" src="https://i0.wp.com/atva-conference.org/2023/wp-content/uploads/2023/08/lim.png?w=256&ssl=1" style="width: 210px; height: 200px;" />
+
+
+<p>Jin Xing Lim is a formal verification engineer at Runtime Verification Inc, where he develops software tools to detect security issues on smart contracts, particularly in the Ethereum ecosystem. Previously, he received his B.Sc. in Mathematics (2014) from the National University of Singapore and Ph.D. in Engineering Systems and Design (2022) from the Singapore University of Technology and Design, where he worked on interactive theorem provers and blockchain applications. Prior to his Ph.D., he also worked as a lecturer (2014 – 2018) at Temasek Polytechnic, where he taught subjects related to mathematics and statistics.</p>
+
+	<p style="text-align: center;" id="reza"><img alt="Reza" src="https://i0.wp.com/atva-conference.org/2023/wp-content/uploads/2023/08/palina.png?w=256&ssl=1" style="width: 210px; height: 230px;" />
+
+<p>Palina Tolmach is a formal verification engineer and researcher with a focus on formal analysis of smart contracts. Prior to joining RV, Palina received her PhD from Nanyang Technology University in Singapore, where she researched and developed tools for smart contract verification and automated repair. She also worked on bridging the gap between theory and practice of verification with major organizations in crypto. She is broadly interested in formal methods, software engineering and program synthesis. Palina strongly believes that formal verification can and should be part of the software development lifecycle.</p>
+
+
+	<h3 style="color:black;background-color:#F1F1F1;"><center>Tutorial 2&nbsp;&nbsp;&nbsp;<strong>Developing Assurance Cases with AdvoCATE</strong></center></h3>
+
+		<strong>Abstract</strong>
+	<p>
+Safety/assurance cases represent the state of the art in assurance technologies, and are often required for applications in many safety-critical domains (e.g., nuclear, automotive, railroad, defense, medical devices, etc.). They are also applicable in domains where regulations have not yet kept up with technology, such as autonomous vehicles.</p>
+
+<p>An assurance case demonstrates that the risks associated with a specific system concern (such as safety, security, etc.) have been identified, are well-understood, have been appropriately controlled, and that there are processes in place to monitor the performance and effectiveness of the risk management measures. Thus, assurance cases are risk management artifacts whose purpose is to convince the various stakeholders of a system, that the system has been designed to be safe, is operated safely, and that it meets the required assurance properties.
+</p>
+
+
+<p>AdvoCATE implements an integrated assurance model that combines hazard analysis, requirements, structured arguments, barrier models (bow tie diagrams), and verification artifacts.</p>
+
+<p>This tutorial will give hands-on experience using the NASA-developed AdvoCATE toolset for creating safety/assurance cases.</p>
+
+		<strong>SPEAKER</strong>
+		<p style="text-align: center;" id="reza"><img alt="Reza" src="https://i0.wp.com/atva-conference.org/2023/wp-content/uploads/2023/08/Ewen-Denney.jpeg?resize=300%2C282&ssl=1" style="width: 210px; height: 200px;" />
+
+<p>
+Dr. Ewen Denney is a senior computer scientist with KBR, KBR Technical Fellow, and the Technical Area Liaison for the Robust Software Engineering group at the NASA Ames Research Center in California.</p>
+
+<p>He currently leads a research group that is seeking to establish a rigorous basis for safety cases, in particular software safety cases, develop tool support, and apply this work to problems in a variety of industries. He has worked on automated code generation, formal certification, and safety analysis in the aerospace domain, developing AI-based systems for the automated generation of code for scientific computation, and the certification of autocode.</p>
+
+<p>Most recently, he has developed the AdvoCATE assurance case automation toolset, as product manager and technical lead, and with his colleagues, submitted the first ever UAS civilian safety case that has been accepted by the FAA.</p>
+
+
+
+
+</div><!-- /#contents -->
+
+<footer>
+	<div align="center" style="margin-bottom:30px">
+		<img alt="IEEE logo" src="images/ieeelogo.gif" width="220px" style="margin-right:80px" />
+		<img alt="IEEE logo" src="images/logoIEEE2.png" width="220px" style="margin-right:80px" />
+		<img alt="Huawei logo" src="images/2023_smu-logo.jpg" height="80px" />
+		<img alt="THU logo" src="images/2023_ntu-logo.jpg" width="220px" style="margin-right:80px" />
+	</div>
+	<div class="footmenu">
+	<div class="copyright">Copyright &#169; PRDC 2023</div><!-- /.copyright -->
+	</div><!-- /.copyright -->
+</footer>
+
+<!-- /.totop -->
+</body>
+</html>
